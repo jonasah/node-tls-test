@@ -1,0 +1,16 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./src",
+    "package": "pkg --targets node12-win-x64 --out-path ./package --options tls-min-v1.0 ."
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "nodemon": "^2.0.3",
+    "pkg": "^4.4.7"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "tls-test",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start:client": "yarn workspace client run start",
+    "start:client:tlsv1": "cross-env NODE_OPTIONS=--tls-min-v1.0 yarn start:client",
+    "start:server": "yarn workspace server run start",
+    "package:client": "yarn workspace client run package"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3"
+  },
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
