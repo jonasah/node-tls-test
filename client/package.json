@@ -9,7 +9,7 @@
     "package": "pkg --targets node12-win-x64 --out-path ./package --options tls-min-v1.0 ."
   },
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "nodemon": "^2.0.3",
     "pkg": "^4.4.7"
   }
